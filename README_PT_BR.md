@@ -3,7 +3,7 @@ Todo o conteúdo e código escrito no meu aprendizado em Golang. Incluindo os ma
 
 ## Cursos
 
-TODO
+- [Go: Iniciando com a Linguagem do Google - Alura](https://cursos.alura.com.br/course/golang)
 
 ## Artigos
 

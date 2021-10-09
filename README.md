@@ -5,7 +5,7 @@ To see the translation of this text in Brazilian Portuguese, [click here](README
 
 ## Courses
 
-TODO
+- [Go: Getting Started With Google Language - Alura](https://cursos.alura.com.br/course/golang)
 
 ## Articles
 
