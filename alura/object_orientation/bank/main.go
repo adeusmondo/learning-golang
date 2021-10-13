@@ -1,39 +1,32 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
 
-type CheckingAccount struct {
-	holder        string
-	agencyNumber  int64
-	accountNumber int64
-	balance       float64
+	"github.com/learning-golang/alura/object_orientation/bank/accounts"
+	"github.com/learning-golang/alura/object_orientation/bank/customers"
+)
+
+type checkAccount interface {
+	Withdraw(value float64) string
+}
+
+func PayBillet(account checkAccount, value float64) {
+	account.Withdraw(value)
 }
 
 func main() {
-
-	holder := "Carlos"
-	agencyNumber := 559
-	accountNumber := 1032
-	balance := 352.20
-
-	ckAccountCarlos := CheckingAccount{
-		holder:        holder,
-		agencyNumber:  int64(agencyNumber),
-		accountNumber: int64(accountNumber),
-		balance:       balance,
+	clienteBruno := customers.Holder{
+		Name: "Bruno",
 	}
-	ckAccountYasmin := CheckingAccount{
-		"Yasmin",
-		159,
-		951,
-		15998.87,
+	contaBruno := accounts.SavingAccount{
+		Holder: clienteBruno,
 	}
+	contaBruno.Deposit(2000)
+	fmt.Println(contaBruno.GetBalance())
+	// contaBruno.Withdraw(1999)
+	fmt.Println(contaBruno.GetBalance())
+	PayBillet(&contaBruno, 500)
+	fmt.Println(contaBruno.GetBalance())
 
-	fmt.Println("Hello", holder,
-		"Agency Number:", agencyNumber,
-		"Account Number:", accountNumber,
-		"Balance:", balance,
-	)
-	fmt.Println(ckAccountCarlos)
-	fmt.Println(ckAccountYasmin)
 }
