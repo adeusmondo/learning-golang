@@ -5,7 +5,10 @@ To see the translation of this text in Brazilian Portuguese, [click here](README
 
 ## Courses
 
-- [Go: Getting Started With Google Language - Alura](https://cursos.alura.com.br/course/golang)
+- [Go: Getting Started With Google Language - Alura](https://cursos.alura.com.br/course/golang) | [src](alura/getting_started_with_google_language)
+- [Go: Object Orientation - Alura](https://cursos.alura.com.br/course/go-lang-oo) | [src](alura/object_orientation)
+
+TODO
 
 ## Articles
 

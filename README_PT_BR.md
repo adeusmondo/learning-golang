@@ -3,7 +3,9 @@ Todo o conteúdo e código escrito no meu aprendizado em Golang. Incluindo os ma
 
 ## Cursos
 
-- [Go: Iniciando com a Linguagem do Google - Alura](https://cursos.alura.com.br/course/golang)
+- [Go: Iniciando com a Linguagem do Google - Alura](https://cursos.alura.com.br/course/golang) | [src](alura/getting_started_with_google_language)
+- [Go: Orientação a Objetos - Alura](https://cursos.alura.com.br/course/go-lang-oo) | [src](alura/object_orientation)
+
 
 ## Artigos
 
